@@ -2,7 +2,7 @@ library(dplyr)
 
 # read in csv, with blank values registered as "NA" strings 
 #  (NA vals already registered as "NA" by default)
-fin <- tbl_df(read.csv("/Users/hannahsmythe/Downloads/Future-500.csv", na.strings = c("")))
+fin <- tbl_df(read.csv("~/Downloads/Future-500.csv", na.strings = c("")))
 fin
 str(fin)
 summary(fin)
