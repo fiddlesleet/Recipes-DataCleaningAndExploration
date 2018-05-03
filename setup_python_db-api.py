@@ -13,7 +13,8 @@ Return cursor object, which runs queries & fetches results
 cursor = connection.cursor()
 
 # execute query using cursor
-cursor.execute("select host_key from cookies limit 10")
+query = "select host_key from cookies limit 10"
+cursor.execute(query)
 # fetch all results from the query, by using the cursor
 results = cursor.fetchall()
 
