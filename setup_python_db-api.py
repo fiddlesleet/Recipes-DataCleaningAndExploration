@@ -20,6 +20,6 @@ results = cursor.fetchall()
 
 print results
 
-#connection.commit() an insertion here, or connection.rcollback() if something went wrong
+#db_connection.commit() an insertion here, or db_connection.rcollback() if something went wrong
 
 db_connection.close()
