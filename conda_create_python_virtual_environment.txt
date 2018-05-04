@@ -1,8 +1,23 @@
+# view all environments you've created
+conda env list
+
+# remove unused environments
+conda env remove -n env_name
+
 # create new virtual env (packages to install listed after env_name) 
 conda create -n env_name python=3 numpy 
 
+# create separate environments for python3 and python2
+conda create -n py2 python=2 
+conda create -n py3 python=3
+
 # enter the environment
 source activate env_name 
+
+# export the environment by writing out all packages to a yaml file
+conda env export > environment.yaml
+# create environment from the exported file
+conda env create -f environment.yaml
 
 # leave the environment
 source deactivate
