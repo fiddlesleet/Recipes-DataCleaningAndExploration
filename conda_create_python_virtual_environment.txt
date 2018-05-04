@@ -1,8 +1,8 @@
-# create new virtual env
-conda create -n project_name python=3
+# create new virtual env (packages to install listed after env_name) 
+conda create -n env_name python=3 numpy 
 
 # enter the environment
-source activate project_name 
+source activate env_name 
 
 # view installed packages
 conda list
