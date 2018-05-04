@@ -1,0 +1,19 @@
+# create new virtual env
+conda create -n project_name python=3
+
+# enter the environment
+source activate project_name 
+
+# view installed packages
+conda list
+
+# setup data science packages
+conda install numpy pandas matplotlib
+
+# install jupyter notebooks
+conda install jupyter notebook
+
+# check installations
+conda list
+
+
