@@ -7,13 +7,23 @@ source activate project_name
 # view installed packages
 conda list
 
-# setup data science packages
+# setup data science packages by installing multiple packages at once 
 conda install numpy pandas matplotlib
 
 # install jupyter notebooks
 conda install jupyter notebook
 
-# check installations
-conda list
+# install specific package number
+conda install numpy=1.10
 
+# update package
+conda update package_name
 
+# update all packages
+conda update --all
+
+# search for a package
+conda search beautifulsoup
+
+# delete package
+conda remove package_name
